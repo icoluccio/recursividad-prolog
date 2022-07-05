@@ -59,4 +59,4 @@ numeroMenorQue(Numero, Actores) :-
   findall(Actor, actorConMenosQue(Numero, Actor), Actores).
 
 %%%%% Punto 3
-confirmarTeoria :- forall(numeroBaconSinRepetidosUnico(_, NumeroDeBacon), (NumeroDeBacon < 6)).
+confirmarTeoria :- forall(numeroBaconSinRepetidosUnico(_, NumeroDeBacon), NumeroDeBacon < 6).
